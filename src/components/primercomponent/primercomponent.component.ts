@@ -18,4 +18,5 @@ export class PrimerComponent{
          this.descripcion = "Aprendiendo Angular a tope";
          this.anyo = 2021;
      }
+     
 }
