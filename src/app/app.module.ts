@@ -8,6 +8,7 @@ import { HooksAngular } from 'src/components/hooksangular/hooksangular.component
 import { Deportes } from 'src/components/deportes/deportes.component';
 import { FormularioBindingModel } from 'src/components/formulariobindingmodel/formulariobindingmodel.component';
 import { FormularioReferencia } from 'src/components/formularioreferencia/formularioreferencia.component';
+import { TablaMultiplicar } from 'src/components/tablamultiplicar/tablamultiplicar.component';
 // importar para los formularios
 import { FormsModule } from '@angular/forms';
 @NgModule({
@@ -17,7 +18,8 @@ import { FormsModule } from '@angular/forms';
     HooksAngular,
     Deportes,
     FormularioBindingModel,
-    FormularioReferencia
+    FormularioReferencia,
+    TablaMultiplicar
   ],
   imports: [
     BrowserModule, FormsModule

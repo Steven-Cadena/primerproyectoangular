@@ -6,6 +6,7 @@ import { Component,ViewChild,ElementRef } from "@angular/core";
 })
 
 export class FormularioReferencia{
+    // esto es para poder coger los datos del formulario
     @ViewChild("cajanumero1") cajanumero1: ElementRef;
     @ViewChild("cajanumero2") cajanumero2: ElementRef;
     public suma : number;
