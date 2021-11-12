@@ -9,6 +9,9 @@ import { Deportes } from 'src/components/deportes/deportes.component';
 import { FormularioBindingModel } from 'src/components/formulariobindingmodel/formulariobindingmodel.component';
 import { FormularioReferencia } from 'src/components/formularioreferencia/formularioreferencia.component';
 import { TablaMultiplicar } from 'src/components/tablamultiplicar/tablamultiplicar.component';
+
+
+
 // importar para los formularios
 import { FormsModule } from '@angular/forms';
 @NgModule({
