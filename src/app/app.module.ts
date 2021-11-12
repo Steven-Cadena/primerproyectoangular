@@ -7,7 +7,7 @@ from 'src/components/primercomponent/primercomponent.component';
 import { HooksAngular } from 'src/components/hooksangular/hooksangular.component';
 import { Deportes } from 'src/components/deportes/deportes.component';
 import { FormularioBindingModel } from 'src/components/formulariobindingmodel/formulariobindingmodel.component';
-
+import { FormularioReferencia } from 'src/components/formularioreferencia/formularioreferencia.component';
 // importar para los formularios
 import { FormsModule } from '@angular/forms';
 @NgModule({
@@ -16,7 +16,8 @@ import { FormsModule } from '@angular/forms';
     PrimerComponent,
     HooksAngular,
     Deportes,
-    FormularioBindingModel
+    FormularioBindingModel,
+    FormularioReferencia
   ],
   imports: [
     BrowserModule, FormsModule

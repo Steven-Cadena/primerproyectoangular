@@ -8,18 +8,31 @@ INDICAR QUE ES DE TIPO ngForm DE ANGULAR -->
     <input type="text" 
             #cajanombre="ngModel" 
             name="cajanombre"
-            [(ngModel)]="user.nombre"/><br/>
+            [(ngModel)]="user.nombre" required/>
+    <label style="color:red"
+           *ngIf="!cajanombre.valid && cajanombre.touched"> 
+            El nombre es obligatorio.
+    </label>
+            <br/>
     <label>Apellidos:</label>
     <input type="text" 
-            #cajaapellido="ngModel" 
+            #cajaapellidos="ngModel" 
             name="cajaapellidos"
-            [(ngModel)]="user.apellidos"/><br/>
+            pattern="[A-Z]{1}[a-z]{2}"
+            [(ngModel)]="user.apellidos"/>
+    <label  style="color: red;"
+    *ngIf="!cajaapellidos.valid && cajaapellidos.touched">
+            El campo apellido debe contener una mayúscula y dos letras pr lo menos
+    </label><br/>
     <label>Edad:</label>
     <input type="number" 
             #cajaedad="ngModel" 
             name="cajaedad"
-            [(ngModel)]="user.edad"/><br/><br/>
-    <button>
+            [(ngModel)]="user.edad"/>
+            <br/><br/>
+    <!-- para validar el formulario aqui desabilitamos el boton hasta que no esten
+    todos los campos rellenos -->
+    <button [disabled]="!userForm.valid"> 
         Enviar Datos
     </button>
 </form>
